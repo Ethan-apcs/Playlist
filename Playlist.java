@@ -1,3 +1,8 @@
+/*
+ * @author Ethan, Ollie
+ * @version 1/11/23
+ */
+
 import java.util.ArrayList;
 
 /**
@@ -9,7 +14,12 @@ public class Playlist {
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
+    
+    private ArrayList<Song> playlist;
+    //maybe more fields?
 
+    
+     
 
 
 
@@ -18,6 +28,7 @@ public class Playlist {
       * then use additional methods to add Songs in one-by-one
       */
 
+        playlist = new ArrayList<Song>();
 
       
 
