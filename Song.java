@@ -1,3 +1,5 @@
+import java.net.PortUnreachableException;
+
 /**
  * File for a Song class to be used in the Playlist Project
  * @author Ethan, Ollie, Nathan
@@ -49,5 +51,8 @@ public class Song {
       }
       //returns the status, liked or not 
 
-
+      public String toString(){
+        return "Title" + "by " + artist + "" + "(duration)" + status;
+      }
+      //to String
 }
