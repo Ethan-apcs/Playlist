@@ -1,6 +1,6 @@
 /**
  * File for a Song class to be used in the Playlist Project
- * @author Ethan, Ollie
+ * @author Ethan, Ollie, Nathan
  * @version 1/11/23
  */
 public class Song {
@@ -32,15 +32,22 @@ public class Song {
       public String getTitle(){
         return title;
       }
+      //returns the title of the song
+
       public String getArtist(){
         return artist;
       }
+      //returns the artist of the song
+
       public double getDuration(){
         return duration;
       }
+      //returns the duration of the song
+
       public String getStatus(){
         return status;
       }
+      //returns the status, liked or not 
 
 
 }
