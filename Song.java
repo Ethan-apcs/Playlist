@@ -8,13 +8,13 @@ public class Song {
     private String title;
     private String artist;
     private double duration;
-    private String status;
+    private boolean status;
 
     /**
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
-    public Song(String myTitle, String myArtist, double myDuration, String myStatus){
+    public Song(String myTitle, String myArtist, double myDuration, boolean myStatus){
         title = myTitle;
         artist = myArtist;
         duration = myDuration;
@@ -44,10 +44,13 @@ public class Song {
       }
       //returns the duration of the song
 
-      public String getStatus(){
+      public boolean getStatus(){
         return status;
       }
       //returns the status, liked or not 
+
+
+      //setter 
 
       public String toString(){
         return "Title" + "by " + artist + "" + "(duration)" + status;
