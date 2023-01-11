@@ -47,10 +47,14 @@ public class Song {
       public boolean getStatus(){
         return status;
       }
-      //returns the status, liked or not 
+      //returns the status
 
-
-      //setter 
+      public void setStatus(){
+        when(true){
+            status = liked;
+        }
+      }
+      //setter method to make status liked or not
 
       public String toString(){
         return "Title" + "by " + artist + "" + "(duration)" + status;
