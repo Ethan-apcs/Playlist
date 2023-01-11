@@ -16,8 +16,7 @@ public class Playlist {
      */
     
     private ArrayList<Song> playlist;
-    //maybe more fields?
-
+    
     
      
 
