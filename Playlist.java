@@ -48,5 +48,10 @@ public class Playlist {
         ArrayList<Song> likedsongs = new ArrayList<>();
         //confused about this 
       }
+      public void removeSong(){ //idk the perameters here
+        for(int i = 0; i < playlist.size(); i++){
+
+        }
+      }
 }
 
