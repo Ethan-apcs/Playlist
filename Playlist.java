@@ -15,13 +15,9 @@ public class Playlist {
      * (CarDealership, Zoo) for structure on how this will look
      */
     
-    private ArrayList<Song> playlist = new Arraylist<Song>();
+    private ArrayList<Song> playlist = new ArrayList<Song>();
     
-    
-
-
-
-
+  
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
       * then use additional methods to add Songs in one-by-one
@@ -102,5 +98,3 @@ public class Playlist {
             }
           }
         }
-
-        //need to finish still. some methods need to be changed to match, but i finished all the methods p much - nathan
