@@ -8,7 +8,7 @@ public class Song {
     private String title;
     private String artist;
     private double duration;
-    private boolean status;
+    private boolean liked = false;
 
     /**
      * Constructor-- what information needs to be given to make a Song?
@@ -18,9 +18,6 @@ public class Song {
         title = myTitle;
         artist = myArtist;
         duration = myDuration;
-
-        status = false;
-        //defaults status to false/unliked
     }
 
      /**
@@ -46,18 +43,22 @@ public class Song {
       }
       //returns the duration of the song
 
-      public boolean getStatus(){
-        return status;
+      public boolean isLiked(){
+        return liked;
       }
       //returns the status
 
-      public void setStatus(){
-        status = !status;
+      public void like(){
+        liked = true;
+      }
+
+      public void unLike(){
+        liked = false;
       }
       //setter method to make status liked or not
 
       public String toString(){
-        return "Title" + "by " + artist + "" + "(duration)" + status;
+        return "Title" + "by " + artist + "" + "(duration)" + liked;
       }
       //to String
 }
