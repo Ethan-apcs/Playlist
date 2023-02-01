@@ -1,55 +1,83 @@
-/**
- * Sample of a tester file for the Playlist class. This file should demonstrate all the capability of your
- * playlist in the main method. You don't need to follow the testing specifications of this exactly
- * if you want to write your own separate tester instead.
- * Note that there's no need for a Scanner in this project-- all of the playlist can be 'hardcoded' into main.
- * @author Ethan, Ollie, Nathan
- * @version 1/11/23
- */
 public class PlaylistTester {
-    public static void main(String[] args) {
-        System.out.println("Initializing a Playlist...\n");
-        //Make your playlist here
+    public static void main(String[] args){
 
-        System.out.println("Adding songs to the Playlist...\n");
-        /**
-         * Add some songs here. Note that the format for adding a Song to a Playlist p
-         * is something like...
-         * p.addSong(new Song(..., ..., ...))
-         */
+        System.out.println();
+        System.out.println("Initializing playlist...");
 
+        System.out.println();
+        System.out.println("Adding songs to the playlist...");
 
+        System.out.println();
+        Playlist hype = new Playlist();
 
-        System.out.println("Printing the songs...\n");
-        //Print out all the songs in the playlist to verify it's working correctly
+        Song one = new Song("Hollywood", "RAC", "3:17");
+        hype.addSong(one);
+        System.out.println("Added \"Hollywood\" by RAC (3:17)");
 
+        Song two = new Song("Creepin", "Metro Boomin", "3:41");
+        hype.addSong(two);
+        System.out.println("Added \"Creepin'(with the Weeknd and 21 Savage)\" by Metro Boomin (3:41)");
 
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
-        //Once your songs are 'liked', this should be reflected in the next printout
+        Song three = new Song("Biking", "Frank Ocean", "4:38");
+        hype.addSong(three);
+        System.out.println("Added \"Biking\" by Frank Ocean (4:38)");
 
+        Song four = new Song("Empire State of mind", "JAY-Z", "4:36");
+        hype.addSong(four);
+        System.out.println("Added \"Empire State of Mind\" by JAY-Z (4:36)");
 
-        System.out.println("Printing the songs...\n");
+        Song five = new Song("No One", "Alicia Keys", "4:14");
+        hype.addSong(five);
+        System.out.println("Added \"No One\" by Alicia Keys (4:14)");
 
+        System.out.println();
+        System.out.println("Printing playlist...");
 
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        System.out.println();
+        hype.getPlaylist();
 
+        System.out.println();
+        System.out.println("Liking \"No One\" and \"Hollywood\"...");
 
-        System.out.println("Printing the songs...\n");
+        hype.likeSong(1);
 
+        hype.likeSong(4);
 
-        System.out.println("\nPrinting only the liked songs...\n");
-        //Your Playlist should be able to do this without looping while in main!
+        System.out.println();
+        System.out.println("Printing playlist...");
 
+        System.out.println();
+        hype.getPlaylist();
 
-        System.out.println("\nPrinting the total duration of all songs...\n");
-        //Note that the format should look something like minutes:seconds
+        System.out.println();
+        System.out.println("Printing total playlist duration...");
 
+        System.out.println();
+        System.out.println(hype.getTotal());
 
-        System.out.println("\nRemoving all unliked songs from the playlist...\n");
-        //This should be doable with a single method call
+        System.out.println("Removing \"Creepin'\" from the playlist...");
+        hype.removeSong(2);
 
+        System.out.println();
+        System.out.println("Printing playlist...");
 
-        System.out.println("Printing all songs...\n");
-        //This should now look like only the liked songs list from before
+        System.out.println();
+        hype.getPlaylist();
+
+        System.out.println();
+        System.out.println("Printing only the liked songs...");
+
+        System.out.println();
+        hype.getLikedSongs();
+
+        System.out.println();
+        System.out.println("Removing liked songs...");
+        hype.removeLiked();
+
+        System.out.println();
+        System.out.println("Printing playlist...");
+
+        System.out.println();
+        hype.getPlaylist();
     }
 }

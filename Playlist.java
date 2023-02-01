@@ -46,10 +46,7 @@ public class Playlist {
       public void addSong(Song song){
         playlist.add(song);
       }
-      public void LikeSong(){
-        ArrayList<Song> likedsongs = new ArrayList<>();
-        //confused about this 
-      }
+
       public void removeSong(int i){ 
        playlist.remove(i);
 
