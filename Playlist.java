@@ -42,13 +42,7 @@ public class Playlist {
             }
         }
       }
-      /*
-       * if(x.isLiked()){
-              System.out.print("❤️ ");}else{System.out.print("- ");
-            }
-            System.out.println("\"" + x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")");
-          }
-       */
+    
       public void addSong(Song song){
         playlist.add(song);
       }
