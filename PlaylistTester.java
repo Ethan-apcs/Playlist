@@ -51,11 +51,11 @@ public class PlaylistTester {
 
         System.out.println();
         System.out.println("Printing total playlist duration...");
-
+   
         System.out.println();
         System.out.println(hype.getTotal());
 
-        System.out.println("Removing \"Creepin'\" from the playlist...");
+        System.out.println("Removing \"Biking'\" from the playlist...");
         hype.removeSong(2);
 
         System.out.println();

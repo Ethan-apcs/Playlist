@@ -23,8 +23,6 @@ public class Playlist {
       * then use additional methods to add Songs in one-by-one
       */
 
-      
-
       /**
        * Methods-- Remember that you need to be able to complete all of the following:
        * Adding a song
@@ -38,11 +36,19 @@ public class Playlist {
       public void getPlaylist(){
         for(Song x:playlist){
             if(x.isLiked()){
+              System.out.println("\"" + x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")" + " --liked");
+            } else {
+              System.out.println("\"" + x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")");
+            }
+        }
+      }
+      /*
+       * if(x.isLiked()){
               System.out.print("❤️ ");}else{System.out.print("- ");
             }
             System.out.println("\"" + x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")");
           }
-        }
+       */
       public void addSong(Song song){
         playlist.add(song);
       }
@@ -64,7 +70,7 @@ public class Playlist {
         public void getLikedSongs(){
           for(Song x:playlist){
               if(x.isLiked()){
-                System.out.println("❤️ \"" + x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")");
+                System.out.println(x.getTitle() + "\" by " + x.getArtist() + " (" + x.getDuration() + ")" + "\" -- liked");
               }
             }
           }
