@@ -50,8 +50,10 @@ public class Song {
       //returns the status
 
       public void setStatus(){
-        when(true){
+        while(true){ //why is this a while loop
             status = liked;
+            
+            }
         }
       }
       //setter method to make status liked or not
